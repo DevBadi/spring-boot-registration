@@ -31,8 +31,11 @@ public class AppUserService implements UserDetailsService {
     public String signUpUser(AppUser appUser) {
         boolean userExists = appUserRepository.findByEmail(appUser.getEmail()).isPresent();
         if (userExists) {
+            // TODO: check if attributes are the same and if
+            // TODO: if email not confirmed send confirmation email.
             throw new IllegalStateException("Email already taken");
         }
+
         String encodedPassword = bCryptPasswordEncoder.encode(appUser.getPassword());
         appUser.setPassword(encodedPassword);
 
@@ -49,7 +52,6 @@ public class AppUserService implements UserDetailsService {
 
         confirmationTokenService.saveConfirmationToken(confirmationToken);
 
-//         TODO: Send an Email
         return token;
     }
     public int enableAppUser(String email) {
