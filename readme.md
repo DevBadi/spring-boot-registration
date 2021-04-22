@@ -41,7 +41,7 @@
       <li>[x] Software documentation - <a href="https://swagger.io/">Swagger</a>, <a href="https://en.wikipedia.org/wiki/Javadoc">Javadoc</a>, <a href="https://www.postman.com/collection/">Postman Collection</a></li>
       <li>[x] <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a> with <a href="https://en.wikipedia.org/wiki/Self-signed_certificate">(self-signed certificate)</a></li>
       <li>[x] <a href="https://www.jsonwebtoken.io/">JSON Web Token</a> based authentication</li>
-      <li>[ ] Quartz Scheduler</li>
+      <li>[x] <a href="https://github.com/maildev/maildev/">Maildev</a> Email system </li>
       <li>[ ] Multiple Databases</li>
       <li>[ ] <a href="https://www.jooq.org/">jOOQ</a></li>
       <li>[ ] Replace Docker with <a href="https://github.com/GoogleContainerTools/jib">jib</a></li>
